@@ -48,6 +48,7 @@ button {
     color: white;
     border: none;
     border-radius: 4px;
+    margin-top: 15px;
     font-size: 16px;
     cursor: pointer;
     margin-top: 10px;
@@ -65,6 +66,46 @@ button:hover {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
+    white-space: pre-line;
+}
+
+.section-title {
+    font-weight: bold;
+    margin: 15px 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    color: #2c3e50;
+}
+
+.wind-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wind-group > div {
+    width: 48%;
+}
+
+.yaku-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.yaku-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.yaku-item {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.yaku-item input[type="checkbox"] {
+    margin-right: 5px;
 }
 
 .success {

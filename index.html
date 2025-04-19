@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>日本麻将胡牌判断</h1>
+        <h1>立直麻将和牌判断</h1>
         <div class="input-group">
             <label for="concealed">暗牌:</label>
             <input type="text" id="concealed" placeholder="例如: 123456789m">
@@ -30,7 +30,76 @@
                 <option value="left">荣和上家</option>
             </select>
         </div>
-        <button id="checkBtn">判断是否和牌</button>
+        
+        <div class="section-title">场况设定</div>
+        <div class="input-group wind-group">
+            <div>
+                <label for="roundWind">场风:</label>
+                <select id="roundWind">
+                    <option value="1">东</option>
+                    <option value="2">南</option>
+                    <option value="3">西</option>
+                    <option value="4">北</option>
+                </select>
+            </div>
+            <div>
+                <label for="seatWind">自风:</label>
+                <select id="seatWind">
+                    <option value="1">东</option>
+                    <option value="2">南</option>
+                    <option value="3">西</option>
+                    <option value="4">北</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="section-title">特殊役种</div>
+        <div class="yaku-options">
+            <div class="yaku-group">
+                <div class="yaku-item">
+                    <input type="checkbox" id="riichi">
+                    <label for="riichi">立直</label>
+                </div>
+                <div class="yaku-item">
+                    <input type="checkbox" id="doubleRiichi">
+                    <label for="doubleRiichi">双立直</label>
+                </div>
+                <div class="yaku-item">
+                    <input type="checkbox" id="ippatsu">
+                    <label for="ippatsu">一发</label>
+                </div>
+            </div>
+            <div class="yaku-group">
+                <div class="yaku-item">
+                    <input type="checkbox" id="lastTileFromWall">
+                    <label for="lastTileFromWall">海底捞月</label>
+                </div>
+                <div class="yaku-item">
+                    <input type="checkbox" id="lastDiscard">
+                    <label for="lastDiscard">河底捞鱼</label>
+                </div>
+                <div class="yaku-item">
+                    <input type="checkbox" id="afterKan">
+                    <label for="afterKan">岭上开花</label>
+                </div>
+            </div>
+            <div class="yaku-group">
+                <div class="yaku-item">
+                    <input type="checkbox" id="robbingKan">
+                    <label for="robbingKan">抢杠</label>
+                </div>
+                <div class="yaku-item">
+                    <input type="checkbox" id="heaven">
+                    <label for="heaven">天和</label>
+                </div>
+                <div class="yaku-item">
+                    <input type="checkbox" id="earth">
+                    <label for="earth">地和</label>
+                </div>
+            </div>
+        </div>
+        
+        <button id="checkBtn">判断和牌与计算番数</button>
         <div id="result" class="result"></div>
     </div>
     
