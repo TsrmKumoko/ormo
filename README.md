@@ -1,0 +1,2 @@
+# Offline Riichi Mahjong Organizer
+

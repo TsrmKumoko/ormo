@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORMO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>日本麻将胡牌判断</h1>
+        <div class="input-group">
+            <label for="concealed">暗牌:</label>
+            <input type="text" id="concealed" placeholder="例如: 123456789m">
+        </div>
+        <div class="input-group">
+            <label for="melded">副露:</label>
+            <input type="text" id="melded" placeholder="例如: 777z444p">
+        </div>
+        <div class="input-group">
+            <label for="winning">和牌:</label>
+            <input type="text" id="winning" placeholder="例如: 1m">
+        </div>
+        <div class="input-group">
+            <label>和牌来源:</label>
+            <select id="winSource">
+                <option value="self">自摸</option>
+                <option value="right">荣和下家</option>
+                <option value="across">荣和对家</option>
+                <option value="left">荣和上家</option>
+            </select>
+        </div>
+        <button id="checkBtn">判断是否和牌</button>
+        <div id="result" class="result"></div>
+    </div>
+    
+    <script src="pointsCalc.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
